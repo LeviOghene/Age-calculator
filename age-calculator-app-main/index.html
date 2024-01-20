@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Age calculator app</title>
+
+</head>
+<body>
+
+  <div class="container">
+     <div class="date-input">
+      <div class="info day">
+        <p id="title1">Day</p>
+        <input type="day" class="input" id="inputDay" placeholder="DD">
+        <span class="error-message empty-message1">This field is required</span>
+        <span class="error-message invalid-message1">Must be a valid day</span>
+      </div>
+      
+      <div class="info month">
+        <p id="title2">Month</p>
+        <input type="text" class="input" id="inputMonth" placeholder="MM">
+        <span class="error-message empty-message2" >This field is required</span>
+        <span class="error-message invalid-message2">Must be a valid month</span>
+      </div>
+    
+      <div class="info year">
+        <p id="title3">Year</p>
+        <input type="year" class="input" id="inputYear" placeholder="YYYY">
+        <span class="error-message empty-message3" >This field is required</span>
+        <span class="error-message invalid-message3">Must be in the past</span>
+      </div>
+      
+      </div>
+
+      <p class="error-message" id="empty-message"></p>
+
+      <div class="icon">
+        <button class="btn-icon">
+          <img src="./assets/images/icon-arrow.svg" alt="">
+        </button>
+      </div>
+      
+      <div class="date-output">
+      <h1><span>--</span> years</h1>
+      <h1><span>--</span> months</h1>
+      <h1><span>--</span> days</h1>
+      </div>
+     
+  </div>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Emmanuel Oghene</a>.
+  </div>
+  <script src="index.js"></script>
+</body>
+</html>

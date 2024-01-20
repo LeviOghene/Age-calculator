@@ -1,0 +1,164 @@
+:root{
+--Purple: hsl(259, 100%, 65%);
+--Light-red: hsl(0, 100%, 67%);
+--White: hsl(0, 0%, 100%);
+--Off-white: hsl(0, 0%, 94%);
+--Light-grey: hsl(0, 0%, 86%);
+--Smokey-grey: hsl(0, 1%, 44%);
+--Off-black: hsl(0, 0%, 8%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--Light-grey);
+}
+
+.container{
+    width: 375px;
+    background-color: var(--White);
+    font-family: 'Inter', sans-serif;
+    margin: 80px auto;
+    padding: 40px 20px;
+    border-radius: 15px;
+    border-bottom-right-radius: 80px;
+}
+
+.date-input{
+    display: flex;
+    justify-content: space-between;
+}
+
+.date-input .info{
+     display: grid;
+}
+
+.date-input p{
+    text-transform: uppercase;
+    color: var(--Smokey-grey);
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.date-input input{
+   width: 70px;
+   padding: 10px 5px;
+   border: 1px solid hsl(0, 0%, 86%);
+   border-radius: 5px;
+   font-size: 16px;
+   font-weight: bold;
+}
+
+.error-message{
+    color: var(--Light-red);
+    font-size: 10px;
+    margin-top: 5px;
+    display: none;
+}
+
+.error-design{
+    border: 1px solid hsl(0, 100%, 67%) ;
+}
+
+::placeholder{
+    color: var(--Smokey-grey);
+}
+
+.icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+    margin: 60px 0;
+    border-top: 1px solid hsl(0, 0%, 86%);
+}
+
+.btn-icon{
+    position: absolute;
+    padding: 15px;
+    border: none;
+    border-radius: 50%;
+    text-align: center;
+    background-color: var(--Purple);
+}
+
+.btn-icon img{
+    width: 25px;
+}
+
+.date-output{
+    font-size: 23px;
+    color: var(--Off-black);
+}
+
+.date-output span{
+    color: var(--Purple);
+}
+
+.attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+@media(min-width:1000px){
+    .container{
+        width: 550px;
+        margin: 100px auto;
+        padding: 40px;
+        border-bottom-right-radius: 150px;
+    }
+
+    .date-input{
+      justify-content: start;
+       gap: 30px;
+    }
+
+    .date-input p{
+        font-size: 10px;
+    }
+
+    .date-input input{
+        width: 100px;
+        padding: 10px 14px ;
+        font-size: 20px;
+    }
+
+    .date-input input:hover{
+        cursor: pointer;
+        border: 1px solid hsl(259, 100%, 65%);
+        color: var(--Off-black);
+    }
+
+
+    .icon{
+        justify-content: end;
+    }
+
+    .btn-icon{
+        padding: 20px;
+    }
+
+    .btn-icon:hover{
+        cursor: pointer;
+        background-color: var(--Off-black);
+    }
+
+    .btn-icon img{
+        width: 28px;
+    }
+
+    .date-output{
+        font-size: 36px;
+    }
+
+    
+}
+
+
+
+
+
+
+
